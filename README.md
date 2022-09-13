@@ -40,6 +40,10 @@ The analysis of the election shows that:
 - The winner of the election was:
     - Diana DeGette, who received 73.8% vote and 272,892 number of votes.
 
+### Election Results Analysis Report
+Below picture is a screenshot of the report. This report is also saved in a text file.
+![image](https://user-images.githubusercontent.com/31812730/189800324-c842e66a-b7ea-439a-a608-00304c2edd2f.png)
+
 ## Summary
 
 The script developed to create the audit report uses election results data as input and to process the data to generate the required information. The election result file has following data points:
@@ -219,3 +223,4 @@ This script was developed based on the requirements received from the Colorado e
 If the requirements remain same, the script can be used for other elction result analysis with below changes:
 - Either the file name of the CSV file containg election data can be changed in the script or the file can be renamed 
 - Based on the type of election, in addion to county level informaion, the script can be modified to include congressional district and state level information
+- Report format can be changed based on the requirement
