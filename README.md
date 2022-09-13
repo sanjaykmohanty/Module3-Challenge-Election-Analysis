@@ -47,7 +47,7 @@ Below picture is a screenshot of the report. This report is also saved in a text
 ## Summary
 
 The script developed to create the audit report uses election results data as input and to process the data to generate the required information. The election result file has following data points:
-- Ballot ID - Unique ID for each voter 
+- Ballot ID - Unique ID for each ballot 
 - County - County name where election was conducted
 - Candidate - Candidate marked in the ballot by the voter
 
