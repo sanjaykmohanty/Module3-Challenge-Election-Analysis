@@ -30,23 +30,23 @@ Second, a new DataFrame was created after merging the two earlier DataFrames. Th
 
 Third, agregate functions were used against DataFrame columns to calculate the following:
 
-- Total rides for each city type
+**Total rides for each city type:**
 
 ![image](https://user-images.githubusercontent.com/31812730/192046952-7d877aee-5eca-4d23-9e49-3fea4c1cd65b.png)
 
-- Total drivers for each city type
+**Total drivers for each city type:**
 
 ![image](https://user-images.githubusercontent.com/31812730/192047536-f47cb919-3e7e-4590-bd9d-6e64e96e37f7.png)
 
-- Total amount of fares for each city type
+**Total amount of fares for each city type:**
 
 ![image](https://user-images.githubusercontent.com/31812730/192047749-6c560a05-33b7-4cdf-8eae-7c4a05241dff.png)
 
-- Average fare per driver for each city type
+**Average fare per driver for each city type:**
 
 ![image](https://user-images.githubusercontent.com/31812730/192048127-dc0c8c99-3e74-4faf-b90f-06bbfb37ad18.png)
 
-- Average fare per driver for each city type
+**Average fare per driver for each city type:**
 
 ![image](https://user-images.githubusercontent.com/31812730/192049617-6c105663-a114-4677-be22-09469d5f838f.png)
 
