@@ -55,23 +55,22 @@ Finally, another new DataFrame is created using these calculated results. The co
 ### Line Chart
 The DataFrame created in the previous step by merging 'city data' and 'ryde data' DataFrames was also used to create this line chart. Following steps were followed to create the line chart:
 
-First, a new DataFrame was created showing the city type, date, and sum of the fares for each date. 
+To start with, a new DataFrame was created showing the city type, date, and sum of the fares for each date. 
 ![image](https://user-images.githubusercontent.com/31812730/192055403-7ddaeb13-f34b-4d75-9565-292543c9a33a.png)
 
-Second, a pivot table was created with date as an index, fare as values and city types as columns. The date range was restricted from Jan-1-2019 to Apr-29-2019.
+Then, a pivot table was created with date as an index, fare as values and city types as columns. The date range was restricted from Jan-1-2019 to Apr-29-2019.
 
 ![image](https://user-images.githubusercontent.com/31812730/192058526-30c97a42-cb0e-4a15-a992-5c9ec6209568.png)
 
-Third, the "date" index was set to datetime datatype.
+Next, the "date" index was set to datetime datatype.
 
 ![image](https://user-images.githubusercontent.com/31812730/192061158-e9a1178e-3403-484e-b44f-d304f551a864.png)
 
-Fourth, a new DataFrame was created using the "resample()" function by week 'W' to get the sum of the fares for each week.
+Afterwards, a new DataFrame was created using the "resample()" function by week ('W') to get the sum of the fares for each week.
 
 ![image](https://user-images.githubusercontent.com/31812730/192061685-b9b6af72-6135-4a63-b018-4ee6ae72d431.png)
 
-Finally, 
-
+In the end, the line chart was created using the resample DtaFrame. 
 
 ## Results
 The summary report created from the 
