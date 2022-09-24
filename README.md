@@ -78,6 +78,7 @@ The summary report created from the
 ![image](https://user-images.githubusercontent.com/31812730/192103917-900c3089-927c-45c6-a989-1ca542505aad.png)
 
 Line Chart
+
 ![image](https://user-images.githubusercontent.com/31812730/192103978-6a648463-925c-48fd-ae81-7b2272693493.png)
 
 
