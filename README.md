@@ -73,17 +73,34 @@ Afterwards, a new DataFrame was created using the "resample()" function by week 
 In the end, the line chart was created using the resample DtaFrame. 
 
 ## Results
-The summary report created from the 
+The summary report created from the the merged PayBer summary DataFrame to show the information of rides, drivers and fares for each city type.
 
 ![image](https://user-images.githubusercontent.com/31812730/192103917-900c3089-927c-45c6-a989-1ca542505aad.png)
 
-Line Chart
+Line Chart to show total fares for each city type during the period between January 1, 2019 and April 29, 2019 for each week. 
 
 ![image](https://user-images.githubusercontent.com/31812730/192103978-6a648463-925c-48fd-ae81-7b2272693493.png)
 
 
 ## Summary
-The summary report shows that number of rides are the least in the rural cities and are the most in the urban cities. However, average fare per ride and average fare per driver are more for rural cities. This suggests that the rides in rural cities are longer than the rides in urban and suburban cities. 
+The summary report shows that number of rides are the least (125) in the rural cities and are the most (1,625) in the urban cities. However, average fare per ride($34.62) and average fare per driver(55.49) are more for the rural cities. it is possible that either the rides in rural cities are longer than the rides in urban and suburban cities or per mile fare cost is more in rural cities.
 
-Number of drivers in the rural cities are one fith of the number of drivers in suburban cities and one thriteeth of the number of drivers in urban cities. This could very well be because the rural cities are less populated 
+The total number of drivers(2,981) supporting PyBer business are 3% from the rural cities (78), 17% from the suburban cities(498), and 81% from the urban cities(2405).    
+
+The total revenue($63,538.64) generated from these rides in terms of total fares is close to 7% from the rural cities($4,327.93), about 30% from the suburban cities($19,356.33), and approximately 63% from the urban cities($39,854.38).
+
+The driver to revenue ration suggets that PyBer business is more profitable in rural cities than the suburban and urban cities.
+
+For all three city types, there is an increase in revenue from the rides during February third week.
+
+Revenue from the urbun cities reached its peak during February third week and March first week.
+
+Revenue from the suburban cities reached its peak during February third week and headed towards peak during April 4th week.
+
+Revenue from the rural cities reached its peak during march fourth week. 
+
+There is substaintial revenue drop between February third week and April fourth week for the suburban cities. Further investigation is required to understand the reason for this dip.
+
+Similar investigation is required for the rural cities to understand the revenue drop between February third week and April first week.
+  
 
