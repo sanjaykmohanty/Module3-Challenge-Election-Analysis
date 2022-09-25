@@ -83,4 +83,7 @@ Line Chart
 
 
 ## Summary
+The summary report shows that number of rides are the least in the rural cities and are the most in the urban cities. However, average fare per ride and average fare per driver are more for rural cities. This suggests that the rides in rural cities are longer than the rides in urban and suburban cities. 
+
+Number of drivers in the rural cities are one fith of the number of drivers in suburban cities and one thriteeth of the number of drivers in urban cities. This could very well be because the rural cities are less populated 
 
