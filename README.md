@@ -83,24 +83,25 @@ Line Chart to show total fares for each city type during the period between Janu
 
 
 ## Summary
-The summary report shows that number of rides are the least (125) in the rural cities and are the most (1,625) in the urban cities. However, average fare per ride($34.62) and average fare per driver(55.49) are more for the rural cities. it is possible that either the rides in rural cities are longer than the rides in urban and suburban cities or per mile fare cost is more in rural cities.
+The summary report shows that number of rides are the least (125) in the rural cities and are the most (1,625) in the urban cities. However, average fare per ride ($34.62) and average fare per driver (55.49) are more for the rural cities. it is possible that either the rides in rural cities are longer than the rides in urban and suburban cities or per mile fare cost is more in rural cities.
 
-The total number of drivers(2,981) supporting PyBer business are 3% from the rural cities (78), 17% from the suburban cities(498), and 81% from the urban cities(2405).    
+The total number of drivers (2,981) supporting PyBer business are 3% from the rural cities (78), 17% from the suburban cities (498), and 81% from the urban cities (2405).
 
-The total revenue($63,538.64) generated from these rides in terms of total fares is close to 7% from the rural cities($4,327.93), about 30% from the suburban cities($19,356.33), and approximately 63% from the urban cities($39,854.38).
+The total revenue ($63,538.64) generated from these rides in terms of total fares is close to 7% from the rural cities ($4,327.93), about 30% from the suburban cities ($19,356.33), and approximately 63% from the urban cities ($39,854.38).
 
-The driver to revenue ration suggets that PyBer business is more profitable in rural cities than the suburban and urban cities.
+The driver to revenue ratio suggests that PyBer business is more profitable in rural cities than in the suburban and urban cities.
 
 For all three city types, there is an increase in revenue from the rides during February third week.
 
-Revenue from the urbun cities reached its peak during February third week and March first week.
+Revenue from the urban cities reached its peak during February third week and March first week.
 
 Revenue from the suburban cities reached its peak during February third week and headed towards peak during April 4th week.
 
-Revenue from the rural cities reached its peak during march fourth week. 
+Revenue from the rural cities reached its peak during March fourth week.
 
-There is substaintial revenue drop between February third week and April fourth week for the suburban cities. Further investigation is required to understand the reason for this dip.
+## Observations
+There is substantial revenue drop between February third week and April fourth week for the suburban cities requires further investigation to understand the reason for this dip.
 
 Similar investigation is required for the rural cities to understand the revenue drop between February third week and April first week.
-  
+
 
