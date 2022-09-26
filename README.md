@@ -1,107 +1,226 @@
-# PyBer Analysis
+# Election Audit Analysis
 
 ## Overview 
-The purpose of this project is to analyze ride-sharing data and crate a report to summarize how PyBer, a ride-sharing compay is performing in cities under urban, suburban and rural categories. The performance data for each city type and the recommendations from the analysis can help the decision-makers at PyBer to understand the differences which will help them in their future decision making process. 
+Colorado Board of Elections conducted a local congressional election. The purpose of this project is to develop an audit report for the election results. 
 
-The datasets used for this analysis are **City Data** and **Ride Data**. **City Data**. The **City Data** includes 'City Name',	'Driver Count', and 'Type of City (i.e. Urban, Suburban, and Rural)'. **Ride Data** includes 'City Name', Date of Ride',	'Fare', and 'Ride ID'. In exploring the datasets some of the questions need to answered are:
-
-1. Total number of rides for each city type
-2. Total number of drivers for each city type
-3. Sum of the fares for each city type
-4. Vverage fare per ride for each city type
-5. Average fare per driver for each city type 
-
-In adition to this, whatever insights can be gathered while exploring the datasets.
+The report outlines below listed information for the Colorado election commission.
+1. Calculate the total number of votes cast.
+2. The voter turnout for each county.
+3. The percentage of votes from each county out of the total count.
+4. The county with the highest turnout.
+5. Get a complete list of candidates who received votes.
+6. Calculate the total number of votes each candidate received.
+7. Calculate the percentage of votes each candidate own.
+8. Determine the winner of the election based on popular vote.
 
 ## Resources
-Data Source: city_data.csv, ride_data.csv Software: Python 3.9.12, Jupyter Notebook 6.4.12 
-
-## Data Exploration
-The requirements described above was addressed in 2 steps.
-1. Create a summary report with information by each city type.
-2. Create a line chart that shows the total weekly of the fares for each type
-
-### Summary Report
-First, necessary python liberires were imported and datasets were lodaed into Pandas DataFrames. From a closer look at the data in the DataFrame, it was evident that the datasets need to be mergerd to get the required output.
-
-Second, a new DataFrame was created after merging the two earlier DataFrames. The data in the new DataFrame is shown below.
-
-![image](https://user-images.githubusercontent.com/31812730/192045183-96ae6809-39cd-41ef-b3e9-7614ebceb921.png)
-
-Third, agregate functions were used against DataFrame columns to calculate the following:
-
-**Total rides for each city type:**
-
-![image](https://user-images.githubusercontent.com/31812730/192046952-7d877aee-5eca-4d23-9e49-3fea4c1cd65b.png)
-
-**Total drivers for each city type:**
-
-![image](https://user-images.githubusercontent.com/31812730/192047536-f47cb919-3e7e-4590-bd9d-6e64e96e37f7.png)
-
-**Total amount of fares for each city type:**
-
-![image](https://user-images.githubusercontent.com/31812730/192047749-6c560a05-33b7-4cdf-8eae-7c4a05241dff.png)
-
-**Average fare per driver for each city type:**
-
-![image](https://user-images.githubusercontent.com/31812730/192048127-dc0c8c99-3e74-4faf-b90f-06bbfb37ad18.png)
-
-**Average fare per driver for each city type:**
-
-![image](https://user-images.githubusercontent.com/31812730/192049617-6c105663-a114-4677-be22-09469d5f838f.png)
-
-Finally, another new DataFrame is created using these calculated results. The columns are formatted to make them more readable. 
-
-### Line Chart
-The DataFrame created in the previous step by merging 'city data' and 'ryde data' DataFrames was also used to create this line chart. Following steps were followed to create the line chart:
-
-To start with, a new DataFrame was created showing the city type, date, and sum of the fares for each date. 
-![image](https://user-images.githubusercontent.com/31812730/192055403-7ddaeb13-f34b-4d75-9565-292543c9a33a.png)
-
-Then, a pivot table was created with date as an index, fare as values and city types as columns. The date range was restricted from Jan-1-2019 to Apr-29-2019.
-
-![image](https://user-images.githubusercontent.com/31812730/192058526-30c97a42-cb0e-4a15-a992-5c9ec6209568.png)
-
-Next, the "date" index was set to datetime datatype.
-
-![image](https://user-images.githubusercontent.com/31812730/192061158-e9a1178e-3403-484e-b44f-d304f551a864.png)
-
-Afterwards, a new DataFrame was created using the "resample()" function by week ('W') to get the sum of the fares for each week.
-
-![image](https://user-images.githubusercontent.com/31812730/192061685-b9b6af72-6135-4a63-b018-4ee6ae72d431.png)
-
-In the end, the line chart was created using the resample DtaFrame. 
+Data Source: election_results.csv Software: Python 3.9.12, Visual Studio Code 1.71.0
 
 ## Results
-The summary report created from the the merged PayBer summary DataFrame to show the information of rides, drivers and fares for each city type.
+The analysis of the election shows that:
 
-![image](https://user-images.githubusercontent.com/31812730/192103917-900c3089-927c-45c6-a989-1ca542505aad.png)
+- There are 369,711 votes cast in the election.
+- The election was conducted in 3 counties: 
+    - Jefferson
+    - Denver
+    - Arapahoe
+- Denver county had the highest voter turnout
+- Voter turnout for each county:
+    - 38,855 votes from Jefferson County, 10.5% of the total votes came from this county
+    - 306,055 votes from Denver County, 82.8% of the total votes came from this county
+    - 24,801 votes from Arapahoe County, 6.7% of the total votes came from this county
+- The candidates were:
+    - Charles Casper Stockham
+    - Diana DeGette
+    - Raymon Anthony Doane
+- The candidate results were:
+    - Charles Casper Stockham received 23.0% of the vote and 85,213 number of votes.
+    - Diana DeGette received 73.8% of the vote and 272,892 number of votes.
+    - Raymon Anthony Doane received 3.1% of the votes and 11,606 number of votes.
+- The winner of the election was:
+    - Diana DeGette, who received 73.8% vote and 272,892 number of votes.
 
-Line Chart to show total fares for each city type during the period between January 1, 2019 and April 29, 2019 for each week. 
-
-![image](https://user-images.githubusercontent.com/31812730/192103978-6a648463-925c-48fd-ae81-7b2272693493.png)
-
+### Election Results Analysis Report
+Below picture is a screenshot of the report. This report is also saved in a text file.
+![image](https://user-images.githubusercontent.com/31812730/189800324-c842e66a-b7ea-439a-a608-00304c2edd2f.png)
 
 ## Summary
-The summary report shows that number of rides are the least (125) in the rural cities and are the most (1,625) in the urban cities. However, average fare per ride ($34.62) and average fare per driver (55.49) are more for the rural cities. it is possible that either the rides in rural cities are longer than the rides in urban and suburban cities or per mile fare cost is more in rural cities.
 
-The total number of drivers (2,981) supporting PyBer business are 3% from the rural cities (78), 17% from the suburban cities (498), and 81% from the urban cities (2405).
+The script developed to create the audit report uses election results data as input and to process the data to generate the required information. The election result file has following data points:
+- Ballot ID - Unique ID for each ballot 
+- County - County name where election was conducted
+- Candidate - Candidate marked in the ballot by the voter
 
-The total revenue ($63,538.64) generated from these rides in terms of total fares is close to 7% from the rural cities ($4,327.93), about 30% from the suburban cities ($19,356.33), and approximately 63% from the urban cities ($39,854.38).
+The script developed to create the audit report uses election results data as input and process the data to generate the required information. The election result file has following data points:
+- Ballot ID - Unique ID for each voter
+- County - Name of the county 
+- Candidate - Candidate marked in the ballot by the voter
 
-The driver to revenue ratio suggests that PyBer business is more profitable in rural cities than in the suburban and urban cities.
+The script has logic to scan through the election results data and produce an election analysis audit report as described under the result section of this document. Code used in the script is shown below.
 
-For all three city types, there is an increase in revenue from the rides during February third week.
+### Python Code Used in Script
 
-Revenue from the urban cities reached its peak during February third week and March first week.
+    # -*- coding: UTF-8 -*-
+    """PyPoll Homework Challenge Solution."""
 
-Revenue from the suburban cities reached its peak during February third week and headed towards peak during April 4th week.
+    # Add our dependencies.
+    import csv
+    import os
 
-Revenue from the rural cities reached its peak during March fourth week.
+    # Add a variable to load a file from a path.
+    file_to_load = os.path.join("Resources", "election_results.csv")
+    # Add a variable to save the file to a path.
+    file_to_save = os.path.join("Analysis", "election_analysis.txt")
 
-## Observations
-There is substantial revenue drop between February third week and April fourth week for the suburban cities requires further investigation to understand the reason for this dip.
+    # Initialize a total vote counter.
+    total_votes = 0
 
-Similar investigation is required for the rural cities to understand the revenue drop between February third week and April first week.
+    # Candidate Options and candidate votes.
+    candidate_options = []
+    candidate_votes = {}
+
+    # 1: Create a county list and county votes dictionary.
+    county_list = []
+    county_votes = {}
 
 
+    # Track the winning candidate, vote count and percentage
+    winning_candidate = ""
+    winning_count = 0
+    winning_percentage = 0
+
+    # 2: Track the largest county and county voter turnout.
+    largest_county = ""
+    county_max_count = 0
+    county_max_turnout = 0
+
+    # Read the csv and convert it into a list of dictionaries
+    with open(file_to_load) as election_data:
+        reader = csv.reader(election_data)
+
+        # Read the header
+        header = next(reader)
+
+        # For each row in the CSV file.
+        for row in reader:
+
+            # Add to the total vote count
+            total_votes = total_votes + 1
+
+            # Get the candidate name from each row.
+            candidate_name = row[2]
+
+            # 3: Extract the county name from each row.
+            county_name = row[1]
+
+            # If the candidate does not match any existing candidate add it to
+            # the candidate list
+            if candidate_name not in candidate_options:
+
+                # Add the candidate name to the candidate list.
+                candidate_options.append(candidate_name)
+
+                # And begin tracking that candidate's voter count.
+                candidate_votes[candidate_name] = 0
+
+            # Add a vote to that candidate's count
+            candidate_votes[candidate_name] += 1
+
+            # 4a: Write an if statement that checks that the
+            # county does not match any existing county in the county list.
+
+            if county_name not in county_list:
+
+                # 4b: Add the existing county to the list of counties.
+                county_list.append(county_name)
+        
+                # 4c: Begin tracking the county's vote count.
+                county_votes[county_name] = 0
+
+            # 5: Add a vote to that county's vote count.
+            county_votes[county_name] += 1
+
+
+    # Save the results to our text file.
+    with open(file_to_save, "w") as txt_file:
+
+        # Print the final vote count (to terminal)
+        election_results = (
+            f"\nElection Results\n"
+            f"-------------------------\n"
+            f"Total Votes: {total_votes:,}\n"
+            f"-------------------------\n\n"
+            f"County Votes:\n")
+    
+        print(election_results, end="")
+
+        txt_file.write(election_results)
+
+        # 6a: Write a for loop to get the county from the county dictionary.
+        for county_name in county_votes:
+            # 6b: Retrieve the county vote count.
+            c_votes = county_votes.get(county_name)
+            # 6c: Calculate the percentage of votes for the county.
+            c_vote_percentage = float(c_votes) / float(total_votes) * 100
+
+            # 6d: Print the county results to the terminal.
+            county_results = (
+                f'{county_name}: {c_vote_percentage:.1f}% ({c_votes:,})\n')
+            print(county_results)
+            # 6e: Save the county votes to a text file.
+            txt_file.write(county_results)
+            # 6f: Write an if statement to determine the winning county and get its vote count.
+            if (c_votes > county_max_count) and (c_vote_percentage > county_max_turnout):
+                county_max_count = c_votes
+                largest_county = county_name
+                county_max_turnoute = c_vote_percentage
+
+        # 7: Print the county with the largest turnout to the terminal.
+        turnout_summary = (
+            f"\n-------------------------\n"
+            f"Largest County Turnout: {largest_county}\n"
+            f"-------------------------\n")
+        print(turnout_summary)
+        # 8: Save the county with the largest turnout to a text file.
+        txt_file.write(turnout_summary)
+
+        # Save the final candidate vote count to the text file.
+        for candidate_name in candidate_votes:
+
+            # Retrieve vote count and percentage
+            votes = candidate_votes.get(candidate_name)
+            vote_percentage = float(votes) / float(total_votes) * 100
+            candidate_results = (
+                f"{candidate_name}: {vote_percentage:.1f}% ({votes:,})\n")
+
+            # Print each candidate's voter count and percentage to the
+            # terminal.
+            print(candidate_results)
+            #  Save the candidate results to our text file.
+            txt_file.write(candidate_results)
+
+            # Determine winning vote count, winning percentage, and candidate.
+            if (votes > winning_count) and (vote_percentage > winning_percentage):
+                winning_count = votes
+                winning_candidate = candidate_name
+                winning_percentage = vote_percentage
+
+        # Print the winning candidate (to terminal)
+        winning_candidate_summary = (
+            f"-------------------------\n"
+            f"Winner: {winning_candidate}\n"
+            f"Winning Vote Count: {winning_count:,}\n"
+            f"Winning Percentage: {winning_percentage:.1f}%\n"
+            f"-------------------------\n")
+        print(winning_candidate_summary)
+
+        # Save the winning candidate's name to the text file
+        txt_file.write(winning_candidate_summary)
+
+### Usability of Script in Other Elections
+This script was developed based on the requirements received from the Colorado election commission and can be used for election results analysis of any other local congressional election. If the audit requirement remains same, the script can be used with minor changes. Although the script satisfies most of the elction analysis audit requirements, if the audit requirement changes, the script can be modified to satisfy the requirement.
+
+If the requirements remain same, the script can be used for other elction result analysis with below changes:
+- Either the file name of the CSV file containg election data can be changed in the script or the file can be renamed 
+- Based on the type of election, in addion to county level informaion, the script can be modified to include congressional district and state level information
+- Report format can be changed based on the requirement
